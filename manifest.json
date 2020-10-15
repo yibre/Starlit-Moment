@@ -1,0 +1,31 @@
+{
+    "name": "Getting Started Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "todo.js",
+            "greeting.js",
+            "clock.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "permission": ["storage"],
+    "icons": {
+        "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+}
+
