@@ -1,96 +1,42 @@
 body {
-    background-color: #2c3e50;
-  }
-  
-  .btn {
-    cursor: pointer;
-  }
-  body {
-    color: #ffffff;
-  }
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  align-item: center;
+}
 
-  .container {
-    align-items: center;
-    margin: 0 auto;
-    height: 100%;
-    width: 50%;
-    margin-top: 5rem;
-  }
+.btn {
+  cursor: pointer;
+}
 
-  .js-clock{
-    text-align: center;
-    display: block;
-    font-size: 70px;
-    margin-bottom: 5rem;
-  }
-  
-  .clicked {
-    color: #7f8c8d;
-  }
-  
-  .form, .greetings{
-    position: relative;
-    margin: 0 auto;
-    display: none;
-    margin-top: 3rem;
-  }
+.clicked {
+  color: #7f8c8d;
+}
 
-  .form input {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 30%;
-    margin-left: 10%;
-    height: 3rem;
-    border: 0;
-    border-bottom: 1px solid teal;
-  }
+.form,
+.greetings {
+  display: none;
+}
 
-  .js-toDoForm input {
-    margin-left: 10%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 30%;
-    height: 3rem;
-    border: 0;
-    border-bottom: 1px solid teal;
-  }
+.showing {
+  display: block;
+}
 
-  input:focus{
-    color: white;
-    border: 0;
-    border-bottom: 5px solid teal;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
-  .js-toDoList{
-    margin-left: 15%;
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    margin-top: 5rem;
-  }
-
-  .showing {
-    display: block;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .bgImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: fadeIn 0.5s linear;
-  }
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
