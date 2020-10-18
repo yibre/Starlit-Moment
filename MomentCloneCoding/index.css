@@ -6,20 +6,74 @@ body {
     cursor: pointer;
   }
   body {
-    color: #34495e;
+    color: #ffffff;
+  }
+
+  .container {
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+    margin-top: 5rem;
+  }
+
+  .js-clock{
+    text-align: center;
+    display: block;
+    font-size: 70px;
+    margin-bottom: 5rem;
   }
   
   .clicked {
     color: #7f8c8d;
   }
   
-  .form,
-  .greetings {
+  .form, .greetings{
+    position: relative;
+    margin: 0 auto;
     display: none;
+    margin-top: 3rem;
   }
-  
+
+  .form input {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    margin-left: 10%;
+    height: 3rem;
+    border: 0;
+    border-bottom: 1px solid teal;
+  }
+
+  .js-toDoForm input {
+    margin-left: 10%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: 3rem;
+    border: 0;
+    border-bottom: 1px solid teal;
+  }
+
+  input:focus{
+    color: white;
+    border: 0;
+    border-bottom: 5px solid teal;
+  }
+
+  .js-toDoList{
+    margin-left: 15%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    margin-top: 5rem;
+  }
+
   .showing {
     display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
   }
   
   @keyframes fadeIn {
